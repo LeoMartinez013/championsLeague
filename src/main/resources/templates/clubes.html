@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Clubes</title>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body id="clubes">
+    <nav>
+        <div><a th:href="@{/}">voltar</a></div>
+    </nav>
+    <main>
+        <h1>Clubes vencedores da UEFA Champions League</h1>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Número de vitórias</th>
+            </tr>
+            <tr th:each="clube : ${clubes}">
+                <td th:text="${clube.nome}"></td>
+                <td th:text="${clube.numero}"></td>
+        </table>
+    </main>
+    
+</body>
+</html>

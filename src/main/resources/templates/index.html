@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Champions League</title>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body id="index">
+    <nav>
+    
+    </nav>
+    <main>
+        <h1>Clubes vencedores da UEFA Champions League</h1>
+        <p>Conheça quais clubes que já venceram a taça orelhuda</p>
+        <div id="buttons">
+            <button onclick="window.location.href='/clubes'">
+                Mostrar todos os clubes
+            </button>
+            <button onclick="window.location.href='/top5'">
+                Mostrar top 5 clubes
+            </button>
+            <button onclick="window.location.href='api/clubes'">
+                Mostrar dados em JSON
+            </button>
+        </div>     
+    </main>
+</body>
+</html>
