@@ -17,7 +17,7 @@ public class DadosController {
         clubes = new ArrayList<Clube>();
 
     public DadosController() {
-        clubes.add(new Clube("Real Madrid", 14));
+        clubes.add(new Clube("Real Madrid", 15));
         clubes.add(new Clube("Milan", 7));
         clubes.add(new Clube("Liverpool", 6));
         clubes.add(new Clube("Bayern", 6));
